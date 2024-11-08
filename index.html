@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-full-container">
+        <!--Control de Puntajes -->
+        <div class="points-container">
+            <div class="score-container">
+                <p>Score: </p>
+                <p id="score"></p>
+            </div>
+            <div class="high-score-container">
+                <p>High-Score: </p>
+                <p id="highScore"></p>
+            </div>
+        </div>
+        <!-- Control de dificultad -->
+        <div class="check-container">
+            <div class="difficulty-container">
+                <label for="easy">Facil</label>
+                <input type="checkbox" name="easy" id="easy">
+                <label for="easy">Media</label>
+                <input type="checkbox" name="normal" id="normal">
+                <label for="easy">Dificil</label>
+                <input type="checkbox" name="hard" id="hard">
+            </div>
+        </div>
+        <!-- Control de Inicio-Reset-->
+        <div class="title-box">
+            <h1>Adivina el Número secreto</h1>
+        </div>
+        <div class="start-reset-container">
+            <label for="startGameBtn" class="s-r-label">Iniciar</label><button id="startGameBtn"
+                onclick="startGame()">Start</button>
+            <label for="reset" class="s-r-label" onclick="resetGame()">Reiniciar</label>
+        </div>
+        <!-- Pantalla Principal -->
+        <div class="gameContainer">
+            <p id="pTitle">Ingresa un Número entre 1 y el 100</p>
+            <input type="number" name="" id="display" disabled>
+            <div class="btn-container">
+                <label for="comparebtn" id="compare">Comparar</label><button id="comparebtn" onclick="compareNumber()"
+                    disabled>comparar</button>
+                <label for="continuebtn" id="continue">Continuar</label><button id="continuebtn"
+                    onclick="continueGame()" disabled>Continuar</button>
+            </div>
+            <p id="playerLifes"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

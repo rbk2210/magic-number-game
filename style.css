@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(134, 141, 241);
+    
+}
+
+@media (min-width: 768px){
+    .game-full-container{
+        max-width: 70%;
+        margin: 0 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+.points-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(96, 164, 219);
+}
+
+
+.score-container,.high-score-container{
+    display: flex;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000000;
+    margin: 0 .3rem;
+}
+
+/* Dificultad */
+
+.check-container{
+    height: 3rem;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(96, 164, 219);
+}
+
+.title-box{
+    background-color: rgb(96, 164, 219);
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* Inicio - Reset*/
+.start-reset-container{
+    width: auto;
+    height: 4rem;
+    background-color: rgb(108, 118, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.s-r-label{
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(161, 166, 231);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.s-r-label:hover{
+    cursor: pointer;
+    border: 2px solid #e6e4e4;
+    background-color: rgb(83, 94, 245);
+    color: #fff;
+}
+#startGameBtn{
+    display: none;
+}
+
+/* Game container*/
+
+.gameContainer{
+    width: auto;
+    height: 40vh;
+    background-color: rgb(83, 94, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pTitle{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+#display{
+    max-width: 50%;
+    margin: 1rem 1.8rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: right;
+    background-color: rgb(161, 166, 231);
+}
+
+#compare{
+    margin-top: 1rem;
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(161, 166, 231);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#compare:hover{
+    cursor: pointer;
+}
+
+#comparebtn{
+    display: none;
+}
+
+#continue{
+    margin-top: 1rem;
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(161, 166, 231);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#continue:hover{
+    cursor: pointer;
+}
+
+#continuebtn{
+    display: none;
+}
+
+#playerLifes{
+    margin-top: 1rem;
+    color: #fff;
+}
