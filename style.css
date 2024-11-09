@@ -9,6 +9,60 @@ body{
     
 }
 
+.modal-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(134, 141, 241);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.okbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ok{
+    display: none;
+}
+
+#oklabel{
+    width: 6.8rem;
+    padding: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: rgb(161, 166, 231);
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.modal-container.close{
+    display: none;
+}
+
+.instructions{
+    width: 100%;
+    padding: 5%;
+}
+.instructions h2 {
+    text-align: center;
+}
+.instructions h3 {
+    margin: .5rem 0;
+}
+ol{
+    width: 100%;
+}
+
+li{
+    font-size: 1rem;
+    margin: 1.5rem 1.5rem;
+}
+
 @media (min-width: 768px){
     .game-full-container{
         max-width: 70%;
@@ -17,6 +71,7 @@ body{
         flex-direction: column;
         justify-content: center;
     }
+    
 }
 
 

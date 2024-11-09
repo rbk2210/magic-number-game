@@ -9,6 +9,23 @@
 </head>
 
 <body>
+    <div class="modal-container">
+        <div class="instructions">
+            <h2>¿Como Jugar?</h2>
+            <h3>Muy facil</h3>
+            <ol>
+                <li>Selecciona la dificultad: Facil, Media o Dificil</li>
+                <li>Presiona el botón iniciar para habilitar la entrada de números</li>
+                <li>Presiona el botón Comparar para ver si acertaste</li>
+                <li>Si acertaste debes presionar el botón continuar para generar un nuevo número y volver a habilitar la entrada de números además de mostrar los puntos obtenidos en el Score</li>
+                <li>Si pierdes presiona el botón reiniciar para volver al inicio y ver si superaste el maximo puntaje(High-score) de ser asi se mostrara el nuevo puntaje hasta ser superado</li>
+            </ol>
+            <div class="okbutton">
+                <label for="ok" id="oklabel"> Entendido</label>
+                <button id="ok" onclick="closeModal()">Entendido</button>
+            </div>
+        </div>
+    </div>
     <div class="game-full-container">
         <!--Control de Puntajes -->
         <div class="points-container">

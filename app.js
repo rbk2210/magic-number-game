@@ -156,3 +156,8 @@ function continueGame(){
         points = 50
     }
 }
+
+function closeModal(){
+    let modal = document.querySelector('.modal-container');
+    modal.classList.add('close')
+}
